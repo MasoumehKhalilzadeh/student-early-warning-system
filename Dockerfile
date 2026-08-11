@@ -9,4 +9,4 @@ COPY . .
 
 ENV PORT=8080
 
-CMD exec uvicorn api.main:app --host 0.0.0.0 --port ${PORT}
+CMD ["python", "-m", "uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8080"]
